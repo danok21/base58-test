@@ -13,7 +13,7 @@ fn main() {
     let hash1 = address1.from_base58().unwrap();
 
 
-    // println!("{}",hex::encode(&hash));
+    //println!("{}",hex::encode(&hash));
     println!("{:02x?}", hash);
     println!("{:02x?}", hash1);
 
@@ -25,10 +25,10 @@ fn main() {
     assert_eq!(encoded, "9axNqFRy75YxUfebcFNdZfw5a2LGEMyNfWcnTG6Ekqgb");
 
 
-    // let input = "090A0B0C";
+     let input = "090A0B0C";
 
-    // let decoded = hex::decode(input).expect("Decoding failed");
+     let decoded_hex = hex::decode(input).expect("Decoding failed");
 
-    // println!("{:?}", decoded);
+     assert_eq!(decoded_hex,[9, 10, 11, 12])
 
 }

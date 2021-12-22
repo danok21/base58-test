@@ -86,6 +86,7 @@ dependencies = [
 name = "base58-test"
 version = "0.1.0"
 dependencies = [
+ "borsh",
  "hex",
  "rust-base58",
  "solana-sdk",
